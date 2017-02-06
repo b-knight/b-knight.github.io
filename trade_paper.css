@@ -1,0 +1,64 @@
+/* Apply the element selector to the paragraph tag.
+All paragraphs will be indented 50 pixels */
+p {
+    text-indent: 50px;
+}
+
+/* Define the <hr> tag so that we can include thematic 
+breaks */
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* Define the background format */
+
+.background {
+    background-color:#f3f3f3;
+}
+
+.left-image {
+    margin: 0px 10px 10px 0px;
+    border:3px solid #021a40;
+}
+
+.right-image {
+    margin: 0px 0px 10px 10px;
+    border:3px solid #021a40;
+}
+
+.center-image {
+    margin: 0;
+    border:3px solid #021a40;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.float-left{
+    float: left;
+    text-align: right;
+}
+
+.float-right{
+    float: right;
+    text-align: left;
+}
+
+.formatted_results{
+    width: 422px;
+    height: 558px;
+    border:3px solid #021a40;
+}
+
+
+
+
