@@ -1,0 +1,219 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+%\usepackage[pdfpagelabels=false]{hyperref}
+% personal data
+\name{Benjamin S.}{Knight}
+%\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Oakland, CA | (850) 497-2782 }{}{knight.benjamin@gmail.com | github.com/b-knight  | linkedin.com/in/benjamin-knight}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+%\phone[mobile]{(850) 497-2782}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+%\email{knight.benjamin@gmail.com} \homepage{https://github.com/b-knight}                               % optional, remove / comment the line if not wanted
+                        % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-1.5cm}
+\begin{center}
+%\small{A former Navy Lieutenant with an M.A. in Political Science, I  specialize in data science. 
+\end{center}
+\vspace{-2cm}
+\section{Skills}
+\quad\small{\textbf{Statistical Programming \& Data Science:} R, Python, STATA, SAS, MySQL, PostgreSQL}\\
+\phantom{aa}\small{\textbf{Business Intelligence:} Looker, Mode, Google Analytics, Adwords, Salesforce, Marketo}\\
+\phantom{aa}\small{\textbf{Other:} Git/GitHub, Redshift, BigQuery, JIRA, Confluence, Microsoft Office Suite}
+\vspace{-0.1cm}
+\section{Projects}
+\begin{itemize}
+\item{\cventry{Janauary 2017}{\scriptsize{\href{https://github.com/b-knight/Understanding-Customer-Conversion-with-Snowplow-Web-Event-Tracking}{github.com/b-knight/Understanding-Customer-Conversion-with-Snowplow-Web-Event-Tracking}}}{Predicting Conversion from Trial Account to Customer}{Stitch Labs}{}{\vspace{3pt}
+Used Python to sessionize tens of millions of events into a materialized view on a Redshift cluster. Applied dimension reduction (PCA, feature pruning on variance inflation factor) to the resulting 15 gigabyte data set. Employed linear \& kernel SVM to create a binary classification model of conversion to paying customer as function of behavior on the company marketing site.}    
+
+\item{\cventry{July 2016}{\scriptsize{\href{https://knightbs.shinyapps.io/time_in_app/}{https://knightbs.shinyapps.io/time\_in\_app/}}}{Visualizing Scalable Growth with a RShiny Web App}{Stitch Labs}{}{\vspace{3pt} Parsed JSON and aggregated multiple query outputs from a MySQL database. Used locally weighted scatterplot smoothing (LOWESS) in R with custom HTML and CSS to visualize typical customer time in-app as a function of operational complexity. Winner of Hax Day 2016 and subsequently utilized as part of a mid-market outbounding campaign.}}}
+
+\end{itemize}
+\vspace{-0.1cm}
+\section{Work Experience}
+
+
+\begin{itemize}
+\item{\cventry{February 2017--Present}{Data Analyst}{NinthDecimal}{San Francisco, CA}{}{\vspace{3pt}
+Member of the Engineering Department embedded with Data Science/Research Team. Executed custom analytics requests from Fortune 1000 brands and their agencies using Python, R, and SQL (ParAccel, Hive).}}
+
+\item{\cventry{November 2015--February 2017}{Business Analyst}{Stitch Labs}{San Francisco, CA}{}{\vspace{3pt}
+Maintained and promulgated key performance indicators via dashboards in Mode and Looker. Reported to Product and Finance departments for A/B testing and revenue forecasting using R. Deployed Python scripts to create materialized views in AWS Redshift. Reported ROI of marketing spend by using Python to sessionize and linearly attribute web event data.}}
+
+\item{\cventry{December 2014--September 2015}{Senior Administrative Assistant}{Acumen LLC / The SPHERE Institute}{Burlingame, CA}{}{\vspace{3pt}
+Managed a team of 3 administrative assistants in supporting healthcare research and office operations.}}
+
+\item{\cventry{October 2012--December 2014}{Graduate Student Instructor}{University of California, Davis}{Davis, CA}{}{\vspace{3pt}
+Conducted an IRB-approved research project in political psychology by collecting original survey data from Amazon Mechanical Turk and using ordinal logistic modeling. Presented research at the International Studies Association, San Francisco (2013).}}
+
+\item{\cventry{February 2006--March 2012}{Surface Warfare Officer (Lieutenant)}{United States Navy}{Pearl Harbor, HI}{}{\vspace{3pt}
+Reported mission readiness metrics and managed divisions of up to 20 sailors. Administered command-wide programs and a 300K training budget while on deployment to the Persian Gulf, West Pacific, and during anti-piracy operations off the coast of Somalia. Orchestrated joint inspections of vessels inbound to the Persian Gulf by U.S. and Iraqi maritime forces. 
+}}
+
+
+
+\end{itemize}
+\vspace{-0.1cm}
+\section{Education}
+
+
+
+\subsection{Academic Qualifications}
+
+
+
+\begin{itemize}
+
+\item{\textbf{Pennsylvania State University}, \textit{M.A. in Applied Statistics}  \phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa} \textit{Expected 2018}}
+\item{\textbf{University of California, Davis}, \textit{M.A. in Political Science} \phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa} \textit{December 2014}}
+\item{\textbf{University of California, Berkeley}, \textit{M.A. in Asian Studies} \phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa} \textit{May 2012}}
+\item{\textbf{Connecticut College}, \textit{B.A. in International Relations}  \phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa} \textit{May 2004}}
+
+\end{itemize}
+
+\vspace{1pt}
+
+\subsection{Professional Development}
+
+\vspace{1pt}
+
+\begin{itemize}
+
+
+\item{\textbf{Udacity}, \textit{Machine Learning Nanodegree, Deep Learning Nanodegree Foundation}  \phantom{aaaaaaaaaaaaa} \textit{January 2017, June 2017}}
+\item{\textbf{Coursera}, \textit{Data Science Specialization with Johns Hopkins University}  \phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa} \textit{October 2016}}
+\item{\textbf{ICPSR}, \textit{Bayesian Modeling \& Causal Inference, Structural Equation Modeling with STATA} \phantom{aaaaaaaaa}\textit{May 2013, July 2014}} 
+\end{itemize}
+%\newpage
+
+%\item{\textbf{3rd year individual project:} \textit{'Artificial Neural Network Approach to Source Localisation in Radiation Portal Monitoring'}
+
+%\vspace{3pt}
+
+%\small{This challenging project took place over the entirety of my third year. It required excellent planning and organisational skills, and the ability to teach myself an entirely new and complex subject. The project was a success, with the system being able to localise a radioactive source down to $ 3 cm$ within a $ 600 m^3$ sensor array. This project has been suggested for publication by my supervisor.}}
+
+%\vspace{6pt}
+
+%\item{\textbf{Industrial Project with Leyland Motors Ltd:}\textit{'Development of a Facility to Ensure the Achievement of Torque Parameters for a Specific Axle Configuration'}
+
+%\vspace{3pt}
+
+%\small{In the 3rd year of my course I spent a week completing an industrial project for Leyland Motors. I worked with a team operating as consultants for a particular problem the company was having. During this project I was working in a professional environment, and co-operating with various managers and engineers to create a design that met the requirements of the problem.}}
+
+%\end{itemize}
+
+%\section{Technical and Personal skills}
+
+%\vspace{6pt}
+
+%\begin{itemize}
+
+%\item \textbf{Programming Languages:} Proficient in: C, C++, Python, Matlab, Arduino, TeX \\ Also basic ability with: Assembly, VBA, VHDL.
+
+%\vspace{6pt}
+
+%\item \textbf{Industry Software Skills:} SolidWorks (Advanced), Matlab (Advanced), Ansys (Intermediate),  LTspice (Intermediate), Most MS Office products including MS project and MS access (Advanced).
+
+%\vspace{6pt}
+
+%\item \textbf{General Business Skills:} Good presentation skills, Works well in a team.
+
+%\vspace{6pt}
+
+%\item \textbf{Other:} Good soldering and spot welding skills, Can write well organised and structured reports.
+
+%\end{itemize}
+
+%\section{Interests and extra-curricular activity}
+
+%\vspace{6pt}
+
+%\begin{itemize}
+
+%\item{I was a "fresher representative" in my 2nd and 3rd years of university, this required me to guide, look after, and ensure that a particular flat of first years have a good time in their first week, and feel consoled in what for most of them is there first time living away from home. We were responsible for the safety and wellbeing of the group of first years during the first week, and during this time I made good friends with all of them.}
+
+%\vspace{6pt}
+
+%\item{I am a member of a number of university societies. I was also the vice president and co-founder of the flash mob society. My roles in this included recruiting members, in which during "fresher's fair" we enlisted over 200 new members. This was regarded as very successful, considering other societies averaged around 50. I also appeared in an interview on the university television station, set up a society bank account, and helped organise the events. One of these events was featured in the local newspaper.}
+
+%\vspace{6pt}
+
+%\item{I am also an avid hiker, having completed the national 3 peaks challenge last summer. Other interest include guitar, which I am self-taught, and home brewing.}
+
+%\end{itemize}
+
+%\section{References}
+
+%\vspace{6pt}
+ 
+%\begin{itemize}
+
+%\item{Up to 4 references available on request}
+
+%\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
