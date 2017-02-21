@@ -1,6 +1,21 @@
+.quote
+{
+    position: absolute;
+    bottom: 20px;
+    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
+	letter-spacing:0.1em;
+	font-size: 18pt;
+	color: #000000;
+	font-variant: small-caps;
+	font-weight: 550;
+    width:100%;
+    text-align:center;
+}
+
 .right_aligned_img
 {
     position: absolute;
-    top: 280px;
-    right: 60px;
+    top: 20%;
+    right: 20%;
+    outline: 3px solid black;
 }
