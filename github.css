@@ -1,21 +1,29 @@
-.quote
+.bottom_text
 {
     position: absolute;
     bottom: 20px;
     font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-	letter-spacing:0.1em;
-	font-size: 18pt;
-	color: #000000;
+	letter-spacing:0.05em;
+	font-size: 20pt;
+	color: #ffffff;
+    text-shadow: 2px 2px #000000;
 	font-variant: small-caps;
-	font-weight: 550;
+	font-weight: 900;
     width:100%;
     text-align:center;
+    background-color:black;
+    z-index:-1;
+    opacity:0.6;
 }
 
-.right_aligned_img
-{
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    outline: 3px solid black;
+
+img.center {
+    display: block;
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 4px solid black;
+    z-index:1; /*specifies the stack (i.e. overlay) order. Higher indices go on top*/
 }
+
+/*SFD*/
