@@ -2,18 +2,19 @@
 {
     position: absolute;
     bottom: 20px;
-    font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;
-	letter-spacing:0.05em;
-	font-size: 20pt;
+    /*font-family: "Adobe Caslon Pro", "Hoefler Text", Georgia, Garamond, Times, serif;*/
+    font-family: proxima-nova, sans-serif;
+/*	*/letter-spacing:0.02em;
+	font-size: 14pt;
 	color: #ffffff;
     text-shadow: 2px 2px #000000;
-	font-variant: small-caps;
+	/*font-variant: small-caps;*/
 	font-weight: 900;
     width:100%;
     text-align:center;
     background-color:black;
-    z-index:-1;
-    opacity:0.6;
+    z-index:1;
+    opacity:0.8
 }
 
 
